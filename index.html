@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    responsive
+  </title>
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="container" id="wrapper">
+    <header>
+      <img id="logo" src="https://placehold.it/120x40?text=Logo" alt="logo">
+      <nav class="top-nav">
+        <ul>
+          <li>Home</li>
+          <li>Info</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <div class="row">
+      <div class="card">
+        <img src="https://placehold.it/300x200?text=Something" alt="1">
+        <h4>Heading</h4>
+        <p>
+          Paragraph 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatem modi, esse. Quibusdam doloremque nobis sequi harum optio numquam distinctio voluptatum necessitatibus, dignissimos error similique ipsum repellendus. Harum, sit accusamus?
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://placehold.it/300x200?text=Something" alt="2">
+        <h4>Heading</h4>
+        <p>
+          Paragraph 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatem modi, esse. Quibusdam doloremque nobis sequi harum optio numquam distinctio voluptatum necessitatibus, dignissimos error similique ipsum repellendus. Harum, sit accusamus?
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://placehold.it/300x200?text=Something" alt="3">
+        <h4>Heading</h4>
+        <p>
+          Paragraph 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis voluptatem modi, esse. Quibusdam doloremque nobis sequi harum optio numquam distinctio voluptatum necessitatibus, dignissimos error similique ipsum repellendus. Harum, sit accusamus?
+        </p>
+      </div>
+    </div>
+
+    <footer >
+      Designed by Masatoshi Nishiguchi
+    </footer>
+
+  </div><!-- /.container -->
+
+  <script>
+      // Get elements.
+      var wrapper = document.getElementById( "wrapper" );
+      var logo    = document.getElementById( "logo" );
+
+      // Toggle colors.
+      logo.onclick = function() {
+        if ( wrapper.style.color === "red" ) {
+          wrapper.style.color = "blue";
+        } else {
+          wrapper.style.color = "red";
+        }
+      }
+  </script>
+
+</body>
+</html>
